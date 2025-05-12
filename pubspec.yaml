@@ -1,0 +1,54 @@
+name: yt_music_player
+description: "A Flutter app for downloading and playing YouTube music offline"
+
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # YouTube Handling
+  youtube_explode_dart: ^1.10.4
+
+  # Audio Playback
+  just_audio: ^0.10.2
+  audio_service: ^0.18.7
+  just_audio_background: 0.0.1-beta.16
+
+  # Storage & Database
+  path_provider: ^2.0.11
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0 # This is the correct latest stable version
+
+  # Networking
+  dio: ^5.0.0
+  cached_network_image: ^3.3.0
+
+  # State Management
+  provider: ^6.0.5 # Simplified from riverpod for easier implementation
+
+  # UI
+  flutter_slidable: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+android:
+  compileSdkVersion: 33
+  minSdkVersion: 21
+  targetSdkVersion: 33
